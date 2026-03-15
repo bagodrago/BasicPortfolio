@@ -8,6 +8,7 @@ export default function Home() {
     <ThemeProvider>
         <Navbar />
         <Hero />
+        <Hero />
     </ThemeProvider>
   );
 }

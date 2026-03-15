@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 const Navbar = () => {
   return (
-    <nav className='navbar bg-base-100 shadow-md/20 shadow-base-content'>
+    <nav className='navbar bg-base-100 shadow-md/40 shadow-base-content h-17 z-50 fixed'>
       <div className='navbar-start space-x-3'>
         {/*Logo Button*/}
         <Logo />

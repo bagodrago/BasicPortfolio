@@ -4,7 +4,8 @@
     mt-3 
     w-30 
     p-2 
-    shadow-lg
+    shadow-lg/40 
+    shadow-base-content
     outline-1
     outline-base-content
 }
