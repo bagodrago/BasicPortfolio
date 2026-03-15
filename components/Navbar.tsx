@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Menu } from 'lucide-react'
+import { Menu, Info } from 'lucide-react'
 
 import ModeToggle from './ModeToggle';
 import Logo from './Logo';
@@ -7,9 +7,18 @@ import Logo from './Logo';
 const Navbar = () => {
   return (
     <nav className='navbar bg-base-100 shadow-md/20 shadow-base-content'>
-      <div className='navbar-start'>
+      <div className='navbar-start space-x-3'>
         {/*Logo Button*/}
         <Logo />
+
+        {/*Looking for Work badge*/}
+        <Link href="#contact">
+          <div className='badge badge-soft badge-accent outline-1 outline-accent/50 min-w-40'>
+            <Info size={14}/>
+            Looking for Work
+          </div>
+        </Link>
+
       </div>
 
       <div className='navbar-end space-x-3'>
