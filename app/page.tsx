@@ -1,6 +1,8 @@
+import ThemeProvider from "@/contexts/ThemeProvider";
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import ThemeProvider from "@/contexts/ThemeProvider";
+import About from "@/components/About";
 
 export default function Home() {
 
@@ -8,7 +10,7 @@ export default function Home() {
     <ThemeProvider>
         <Navbar />
         <Hero />
-        <Hero />
+        <About />
     </ThemeProvider>
   );
 }
