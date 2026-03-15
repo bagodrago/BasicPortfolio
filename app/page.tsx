@@ -1,13 +1,13 @@
-import React from "react";
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ThemeProvider from "@/contexts/ThemeProvider";
 
 export default function Home() {
+
   return (
-    <div className="">
-      <Navbar />
-      <Hero />
-    </div>
+    <ThemeProvider>
+        <Navbar />
+        <Hero />
+    </ThemeProvider>
   );
 }
