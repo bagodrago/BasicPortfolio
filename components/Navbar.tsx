@@ -12,7 +12,7 @@ const Navbar = () => {
         <Logo />
 
         {/*Looking for Work badge*/}
-        <Link href="#contact">
+        <Link href="#contact" replace>
           <div className='badge badge-soft badge-accent outline-1 outline-accent/50 min-w-40'>
             <Info size={14}/>
             Looking for Work
@@ -27,9 +27,9 @@ const Navbar = () => {
         
         {/*Links*/}
         <ul className='menu menu-horizontal px-1 hidden lg:flex'>
-          <li><Link href="#about"   >About</Link></li>
-          <li><Link href="#projects">Projects</Link></li>
-          <li><Link href="#contact" >Contact</Link></li>
+          <li><Link href="#about"    replace>About</Link></li>
+          <li><Link href="#projects" replace>Projects</Link></li>
+          <li><Link href="#contact"  replace>Contact</Link></li>
         </ul>
 
         {/*Dropdown Menu*/}
@@ -41,9 +41,9 @@ const Navbar = () => {
             tabIndex={-1}
             className='menu menu-md dropdown-content rounded-box navbar__dropdown_list'
           >
-            <li><Link href="#about"   >About</Link></li>
-            <li><Link href="#projects">Projects</Link></li>
-            <li><Link href="#contact" >Contact</Link></li>
+            <li><Link href="#about"    replace>About</Link></li>
+            <li><Link href="#projects" replace>Projects</Link></li>
+            <li><Link href="#contact"  replace>Contact</Link></li>
           </ul>
         </div>
       </div>

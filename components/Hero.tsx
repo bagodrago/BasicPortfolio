@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 const Hero = () => {
   // TODO: Adjust alignment for lg+
@@ -25,11 +25,13 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl">
-            Developing quality products for your customers requires developers with an eye for detail and a passion for their work! Don't settle for less!
+            Developing <b>quality products</b> for your customers requires developers with an <b>eye for detail</b> and a <b>passion for their work</b>! Don't settle for less!
           </p>
 
-          <div className="btn bg-base-100"> // TODO: Implement button
-            See what I have to offer!
+          <div className="btn bg-base-100 hover:bg-primary hover:text-primary-content">
+            <Link href="#about" replace>
+              See what I have to offer!
+            </Link>
           </div>
         </div>
       </div>

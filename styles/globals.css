@@ -4,3 +4,11 @@
 };
 
 @import "./Navbar.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply scroll-mt-170
+}

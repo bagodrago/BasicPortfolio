@@ -9,7 +9,10 @@ const Logo = () => {
 
   return (
     <div className='btn btn-ghost py-6'>
-      <Link href="#">
+      <Link href="#" onClick={() => {window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })}} replace>
         <Image 
           src="/logotk.svg" 
           alt="Logo" 
