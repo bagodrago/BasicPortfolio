@@ -16,6 +16,9 @@ export default function RootLayout({
       lang="en"
       data-theme="light"
     >
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"></link>
+      </head>
       <body>
         {children}
       </body>
