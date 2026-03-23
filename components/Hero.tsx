@@ -13,6 +13,7 @@ const Hero = () => {
       <div className='hero-overlay'/>
 
       <div className="hero-content flex-row m-10 space-x-10">
+        {/* TODO: Put photo image in a mask */}
         <img
           src='/2023.png'
           alt="A picture of my handsome face. Trust me, I'm very handsome."
@@ -28,7 +29,7 @@ const Hero = () => {
             Developing <b>quality products</b> for your customers requires developers with an <b>eye for detail</b> and a <b>passion for their work</b>! Don't settle for less!
           </p>
 
-          <div className="btn bg-base-100 hover:bg-primary hover:text-primary-content">
+          <div className="btn bg-base-100 hover:bg-primary hover:text-primary-content text-xs md:text-sm">
             <Link href="#about" replace>
               See what I have to offer!
             </Link>
