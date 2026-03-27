@@ -3,7 +3,11 @@ import ThemeProvider from "@/contexts/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
+// TODO: Implement transitions for all components
+// TODO: Fix scroll height for links
 export default function Home() {
 
   return (
@@ -11,6 +15,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Projects />
+        <Contact />
     </ThemeProvider>
   );
 }

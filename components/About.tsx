@@ -3,8 +3,8 @@ import Link from 'next/link'
 const About = () => {
   // TODO: Finish implementation of About component
   return (
-    <section id="about" className="min-h-screen bg-base-100 flex-1 relative overflow-hidden">
-      <div className='m-10'>
+    <section id="about" className="bg-base-100 flex-1 relative overflow-hidden pb-20">
+      <div className='my-10 mx-10 lg:mx-50'>
         <h2 className='text-4xl italic font-semibold'>
           Who am I?
         </h2>
