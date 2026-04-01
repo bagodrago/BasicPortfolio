@@ -4,19 +4,23 @@ const About = () => {
   // TODO: Finish implementation of About component
   return (
     <section id="about" className="bg-base-100 flex-1 relative overflow-hidden pb-20">
+
+      {/*Title*/}
       <div className='my-10 mx-10 lg:mx-50'>
         <h2 className='text-4xl italic font-semibold'>
           Who am I?
         </h2>
-        <p  className='mt-3'>
+        <p className='mt-3'>
           Here's a bit about me...
         </p>
       </div>
-      {/** TODO: Make card adjust to large format with bigger text and icon */}
+
+      {/* TODO: Make card adjust to large format with bigger text and icon */}
       
-      {/* Card */}
+      {/*Card*/}
       <div className="card card-xl mx-20 bg-primary text-primary-content flex-row overflow-hidden relative shadow-lg max-w-250">
-        {/* Background */}
+        
+        {/*Background Layer*/}
         <div className='absolute inset-0 z-0 pointer-events-none bg-primary'>
           <div className='
             h-full 
@@ -30,16 +34,17 @@ const About = () => {
           '/>
         </div>
 
+        {/*Gradient Layer*/}
         <div className='
           absolute inset-0 z-10 pointer-events-none
           md:bg-linear-to-l bg-linear-to-t 
           from-primary to-transparent from-70% to-90%
         '/>
 
-        {/* Card Body */}
+        {/*Card Body*/}
         <div className="card-body text-left z-20 flex-col md:flex-row space-x-5 items-center">
 
-          {/* Avatar */}
+          {/*Avatar*/}
           <div className='flex items-center'>
             <div className='avatar h-40 w-40'>
               <div className="rounded-full ring-5 ring-primary">
@@ -48,7 +53,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Text */}
+          {/*Text*/}
           <div className='flex-col space-y-2'>
             <p>
               Hi! My name is
@@ -63,6 +68,7 @@ const About = () => {
               I've also recently taken a strong interest in React-based websites and application.
             </p>
 
+            {/*LinkedIn Button*/}
             <div className='mt-5'>
               <div className="btn bg-orange-400 text-white hover:bg-accent hover:text-accent-content font-bold">
                 <Link href="https://www.linkedin.com/in/david-howe-cs" target="_blank" replace>
@@ -71,6 +77,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
+
           </div>
           
         </div>
