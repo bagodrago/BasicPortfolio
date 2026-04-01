@@ -3,11 +3,15 @@ import React from 'react'
 // TODO: Implement Contact
 const Contact = () => {
   return (
-    <section id="contact" className='bg-base-100 text-center min-h-screen'>
-
-      {/* TODO: Marble background */}
+    <section id="contact" className='bg-base-100 text-center min-h-screen relative overflow-hidden'>
+      {/*Background Layer*/}
+      <div 
+        className="absolute inset-0 bg-cover bg-center blur-sm scale-110 saturate-90 brightness-80 z-0"
+        style={{backgroundImage: "url('/marble-bg.jpg')"}}
+      />
       
-      <div className='mx-20 my-10'>
+      {/*Text*/}
+      <div className='mx-20 my-10 z-10 text-white relative'>
         <h2 className='text-4xl font-semibold'>
           Let's get in touch!
         </h2>
