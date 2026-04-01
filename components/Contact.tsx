@@ -1,9 +1,11 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 // TODO: Implement Contact
 const Contact = () => {
   return (
     <section id="contact" className='bg-base-100 text-center min-h-screen relative overflow-hidden'>
+      
       {/*Background Layer*/}
       <div 
         className="absolute inset-0 bg-cover bg-center blur-sm scale-110 saturate-90 brightness-80 z-0"
@@ -22,7 +24,10 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* TODO: Implement card for form */}
+      {/*Form*/}
+      <ContactForm/>
+
+      {/* TODO: Add footer */}
       
     </section>
   )
