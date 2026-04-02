@@ -3,10 +3,10 @@ import Link from "next/link";
 const Hero = () => {
   // TODO: Adjust alignment for lg+
   return (
-    <section id="/" className="hero min-h-screen flex-1 relative overflow-hidden">
+    <section id="/" className="hero">
       {/*Background Layer*/}
       <div
-        className="absolute inset-0 bg-cover bg-center blur-sm scale-110 saturate-90 brightness-80"
+        className="my-bg"
         style={{backgroundImage: "url('/marble-bg.jpg')"}}
       />
 
@@ -32,11 +32,11 @@ const Hero = () => {
           </p>
 
           {/*Explore Button*/}
-          <div className="btn bg-base-100 hover:bg-primary hover:text-primary-content text-xs md:text-sm">
+          <button className="btn hero__btn">
             <Link href="#about" replace>
               See what I have to offer!
             </Link>
-          </div>
+          </button>
         </div>
       </div>
       

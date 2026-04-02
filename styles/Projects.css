@@ -1,0 +1,7 @@
+.projects {
+  @apply py-10 
+  min-h-screen 
+  bg-primary 
+  text-primary-content 
+  text-right
+}

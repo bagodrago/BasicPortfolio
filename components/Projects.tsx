@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
     // TODO: Choose better background
   return (
-    <section id="projects" className="py-10 min-h-screen bg-primary text-primary-content text-right">
+    <section id="projects" className="projects">
       
       {/*Text*/}
       <div className='my-10 mx-10 lg:mx-50'>

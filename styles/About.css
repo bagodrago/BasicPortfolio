@@ -1,0 +1,61 @@
+.about {
+  @apply bg-base-100
+  flex-1 
+  relative 
+  overflow-hidden 
+  pb-20
+}
+
+.about__card {
+  @apply mx-20 
+  bg-primary 
+  text-primary-content 
+  flex-row 
+  overflow-hidden 
+  relative 
+  shadow-lg 
+  max-w-250
+}
+
+.about__bg_wrapper {
+  @apply absolute 
+  inset-0 
+  z-0 
+  pointer-events-none 
+  bg-primary
+}
+
+.about__bg {
+  @apply h-full 
+  w-full 
+  bg-[url(/marble-bg.jpg)]
+  bg-cover
+  bg-center
+  grayscale
+  mix-blend-hard-light
+  opacity-70
+}
+
+.about__gradient {
+  @apply absolute 
+  pointer-events-none
+  inset-0 
+  z-10 
+  
+  md:bg-linear-to-l 
+  bg-linear-to-t 
+  
+  from-primary 
+  to-transparent 
+  from-70% 
+  to-90%
+}
+
+.about__card_body {
+  @apply text-left 
+  z-20 
+  flex-col 
+  md:flex-row 
+  md:space-x-5 
+  items-center
+}

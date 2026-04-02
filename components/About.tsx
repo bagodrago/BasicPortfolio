@@ -3,7 +3,7 @@ import Link from 'next/link'
 const About = () => {
   
   return (
-    <section id="about" className="bg-base-100 flex-1 relative overflow-hidden pb-20">
+    <section id="about" className="about">
 
       {/*Title*/}
       <div className='my-10 mx-10 lg:mx-50'>
@@ -18,31 +18,18 @@ const About = () => {
       {/* TODO: Make card adjust to large format with bigger text and icon */}
       
       {/*Card*/}
-      <div className="card card-xl mx-20 bg-primary text-primary-content flex-row overflow-hidden relative shadow-lg max-w-250">
+      <div className="card card-xl about__card">
         
         {/*Background Layer*/}
-        <div className='absolute inset-0 z-0 pointer-events-none bg-primary'>
-          <div className='
-            h-full 
-            w-full 
-            bg-[url(/marble-bg.jpg)] 
-            bg-cover
-            bg-center
-            grayscale
-            mix-blend-hard-light
-            opacity-70
-          '/>
+        <div className='about__bg_wrapper'>
+          <div className='about__bg'/>
         </div>
 
         {/*Gradient Layer*/}
-        <div className='
-          absolute inset-0 z-10 pointer-events-none
-          md:bg-linear-to-l bg-linear-to-t 
-          from-primary to-transparent from-70% to-90%
-        '/>
+        <div className='about__gradient'/>
 
         {/*Card Body*/}
-        <div className="card-body text-left z-20 flex-col md:flex-row space-x-5 items-center">
+        <div className="card-body about__card_body">
 
           {/*Avatar*/}
           <div className='flex items-center'>
@@ -70,17 +57,13 @@ const About = () => {
             {/* TODO: Rewrite about */}
 
             {/*LinkedIn Button*/}
-            <div className='mt-5'>
-              <div className="btn bg-orange-400 text-white hover:bg-accent hover:text-accent-content font-bold">
-                <Link href="https://www.linkedin.com/in/david-howe-cs" target="_blank" replace>
-                  <i className="devicon-linkedin-plain mr-1"/>
-                  Connect with me on LinkedIn
-                </Link>
-              </div>
-            </div>
-
+            <button className="btn">
+              <Link href="https://www.linkedin.com/in/david-howe-cs" target="_blank" replace>
+                <i className="devicon-linkedin-plain mr-1"/>
+                Connect with me on LinkedIn
+              </Link>
+            </button>
           </div>
-          
         </div>
       </div>
 

@@ -1,3 +1,13 @@
+.navbar {
+  @apply bg-base-100 
+  outline-1 
+  outline-base-content/70 
+  shadow-md/40 
+  h-17 
+  z-50 
+  fixed
+}
+
 .navbar__dropdown_list {
   @apply bg-base-100
     z-10 
@@ -8,4 +18,5 @@
     shadow-base-content
     outline-1
     outline-base-content
+    rounded-box
 }

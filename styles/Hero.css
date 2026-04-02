@@ -1,0 +1,16 @@
+.hero {
+  @apply min-h-screen 
+  flex-1 
+  relative 
+  overflow-hidden
+}
+
+.hero__btn {
+  @apply bg-base-100 
+  text-base-content 
+  hover:bg-primary 
+  hover:text-primary-content 
+  text-xs 
+  md:text-sm
+  mt-0
+}

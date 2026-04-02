@@ -15,6 +15,7 @@ export default function RootLayout({
     <html 
       lang="en"
       data-theme="light"
+      suppressHydrationWarning
     >
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"></link>

@@ -3,8 +3,6 @@
   themes: light, dark;
 };
 
-@import "./Navbar.css";
-
 html {
   scroll-behavior: smooth;
 }
@@ -12,3 +10,30 @@ html {
 section {
   @apply scroll-mt-170
 }
+
+button {
+  @apply bg-orange-400 
+  text-white 
+  hover:bg-accent 
+  hover:text-accent-content 
+  font-bold
+  mt-5
+}
+
+.my-bg {
+  @apply absolute 
+  inset-0 
+  bg-cover 
+  bg-center 
+  blur-sm 
+  scale-110 
+  saturate-90 
+  brightness-80 
+}
+
+@import "./Navbar.css";
+@import "./Hero.css";
+@import "./About.css";
+@import "./Projects.css";
+@import "./Contact.css";
+@import "./ContactForm.css";

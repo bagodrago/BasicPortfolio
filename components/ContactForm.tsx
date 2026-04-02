@@ -31,7 +31,7 @@ const ContactForm = () => {
 
   // TODO: Make form bulletproof
   return (
-    <div onSubmit={handleSubmit} className='card bg-base-100 relative shadow-2xl mx-10 max-w-4xl'>
+    <form onSubmit={handleSubmit} className='card contact_form'>
       <div className='card-body mt-[-10]'>
         <fieldset className='fieldset w-full'>
 
@@ -42,15 +42,15 @@ const ContactForm = () => {
           <input type="text" onChange={handleChange} className='input w-full mb-2' placeholder='example@email.com'/>
 
           <label className='label'>Message</label>
-          <textarea onChange={handleChange} className='textarea w-full' placeholder=''/>
+          <textarea onChange={handleChange} className='textarea w-full h-60' placeholder=''/>
           
-          <button type="submit" className="enabled btn bg-orange-400 text-white hover:bg-accent hover:text-accent-content font-bold mt-5 peer-invalid:disabled peer-placeholder-shown:disabled">
+          <button type="submit" className="btn">
             Send Message
           </button>
 
         </fieldset>
       </div>
-    </div>
+    </form>
   )
 }
 
