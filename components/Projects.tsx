@@ -1,6 +1,5 @@
 import React from 'react'
 
-// TODO: Implement Projects
 const Projects = () => {
     // TODO: Choose better background
   return (

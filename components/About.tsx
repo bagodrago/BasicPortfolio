@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const About = () => {
-  // TODO: Finish implementation of About component
+  
   return (
     <section id="about" className="bg-base-100 flex-1 relative overflow-hidden pb-20">
 
@@ -67,6 +67,7 @@ const About = () => {
               I've been coding things since middle school and that drive to learn has continued to fuel my career through personal study ever since.
               I've also recently taken a strong interest in React-based websites and application.
             </p>
+            {/* TODO: Rewrite about */}
 
             {/*LinkedIn Button*/}
             <div className='mt-5'>
@@ -81,7 +82,9 @@ const About = () => {
           </div>
           
         </div>
-    </div>
+      </div>
+
+      {/* TODO: Add more to section? Tech stack maybe? */}
       
     </section>
   )

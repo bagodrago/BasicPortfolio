@@ -29,7 +29,7 @@ const ContactForm = () => {
     console.log(data);
   }
 
-
+  // TODO: Make form bulletproof
   return (
     <div onSubmit={handleSubmit} className='card bg-base-100 relative shadow-2xl mx-10 max-w-4xl'>
       <div className='card-body mt-[-10]'>
