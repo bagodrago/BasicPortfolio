@@ -11,7 +11,7 @@ const Hero = () => {
       />
 
       {/*Hero Content*/}
-      <div className="hero-content flex-row m-10 space-x-10">
+      <div className="hero-content flex-row m-10 space-x-10 2xl:max-w-390">
 
         {/*Photo*/}
         {/* TODO: Put photo image in a mask */}
@@ -23,11 +23,11 @@ const Hero = () => {
 
         {/*Text*/}
         <div className="text-white text-right space-y-10">
-          <h1 className="text-5xl font-bold">
+          <h1 className="font-bold text-5xl 2xl:text-6xl">
             Let's make your <span className="text-accent italic">dream</span> projects a <span className="text-accent underline">reality</span>!
           </h1>
 
-          <p className="text-xl">
+          <p className="text-xl 2xl:text-2xl">
             Developing <b>quality products</b> for your customers requires developers with an <b>eye for detail</b> and a <b>passion for their work</b>! Don't settle for less!
           </p>
 
