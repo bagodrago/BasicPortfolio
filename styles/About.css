@@ -1,14 +1,23 @@
 .about {
-  @apply bg-base-100
+  @apply
+  bg-base-300
   flex-1 
   relative 
   overflow-hidden 
   pb-20
 }
 
-.about__card {
+.about__layout_wrapper {
   @apply mx-20 
-  bg-primary 
+  flex 
+  flex-col
+  xl:flex-row 
+  gap-15 
+  items-center
+}
+
+.about__card {
+  @apply bg-primary 
   text-primary-content 
   flex-row 
   overflow-hidden 
@@ -58,4 +67,12 @@
   md:flex-row 
   md:space-x-5 
   items-center
+}
+
+.about__tech_card {
+  @apply p-5 
+  bg-base-content 
+  text-base-300 
+  shadow-lg
+  w-full
 }

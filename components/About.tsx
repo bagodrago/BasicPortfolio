@@ -14,60 +14,104 @@ const About = () => {
           Here's a bit about me...
         </p>
       </div>
-
-      {/* TODO: Make card adjust to large format with bigger text and icon */}
       
-      {/*Card*/}
-      <div className="card card-xl about__card">
-        
-        {/*Background Layer*/}
-        <div className='about__bg_wrapper'>
-          <div className='about__bg'/>
-        </div>
+      <div className='about__layout_wrapper'>
 
-        {/*Gradient Layer*/}
-        <div className='about__gradient'/>
+        {/*Card*/}
+        <div className="card card-xl about__card">
+          
+          {/*Background Layer*/}
+          <div className='about__bg_wrapper'>
+            <div className='about__bg'/>
+          </div>
 
-        {/*Card Body*/}
-        <div className="card-body about__card_body">
+          {/*Gradient Layer*/}
+          <div className='about__gradient'/>
 
-          {/*Avatar*/}
-          <div className='flex items-center'>
-            <div className='avatar h-40 w-40'>
-              <div className="rounded-full ring-5 ring-primary">
-                <img src="/pete.jpg" />
+          {/*Card Body*/}
+          <div className="card-body about__card_body">
+
+            {/*Avatar*/}
+            <div className='flex items-center'>
+              <div className='avatar h-40 w-40'>
+                <div className="rounded-full ring-5 ring-primary">
+                  <img src="/pete.jpg" />
+                </div>
               </div>
             </div>
-          </div>
 
-          {/*Text*/}
-          <div className='flex-col space-y-2'>
-            <p>
-              Hi! My name is
-            </p>
-            <h2 className="card-title text-5xl text-white font-semibold">
-              David Howe
-            </h2>
-            <p>
-              I'm an aspiring Software Developer/QA Analyst who recently graduated from Ontario Tech University. 
-              I have years of hands-on experience working with object-oriented languages and a passion for AGILE development strategies.
-              I've been coding things since middle school and that drive to learn has continued to fuel my career through personal study ever since.
-              I've also recently taken a strong interest in React-based websites and application.
-            </p>
-            {/* TODO: Rewrite about */}
+            {/*Text*/}
+            <div className='flex-col space-y-2'>
+              <p>
+                Hi! My name is
+              </p>
+              <h2 className="card-title text-5xl text-white font-semibold">
+                David Howe
+              </h2>
+              <p>
+                I'm an aspiring Software Developer/QA Analyst who recently graduated from Ontario Tech University. 
+                I have years of hands-on experience working with object-oriented languages and a passion for AGILE development strategies.
+                I've been coding things since middle school and that drive to learn has continued to fuel my career through personal study ever since.
+                I've also recently taken a strong interest in React-based websites and application.
+              </p>
+              {/* TODO: Rewrite about */}
 
-            {/*LinkedIn Button*/}
-            <button className="btn">
-              <Link href="https://www.linkedin.com/in/david-howe-cs" target="_blank" replace>
-                <i className="devicon-linkedin-plain mr-1"/>
-                Connect with me on LinkedIn
-              </Link>
-            </button>
+              {/*LinkedIn Button*/}
+              <button className="btn">
+                <Link href="https://www.linkedin.com/in/david-howe-cs" target="_blank" replace>
+                  <i className="devicon-linkedin-plain mr-1"/>
+                  Connect with me on LinkedIn
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* TODO: Add more to section? Tech stack maybe? */}
+        {/*Tech Stack Card*/}
+        <div className='card card-lg about__tech_card'>
+          <h2 className='card-title mb-3'>
+            My Skills
+          </h2>
+
+          {/* TODO: Populate Tech Stack with real skills (possibly with a factory) */}
+          <ul className='list overflow-scroll'>
+            <p className='text-xs'>Web Tools</p>
+            <li className='list-row'>
+              <div className='space-x-1 space-y-1'>
+                <div className='badge badge-primary'>HTML</div>
+                <div className='badge badge-primary'>CSS</div>
+                <div className='badge badge-primary'>React</div>
+                <div className='badge badge-primary'>NextJS</div>
+                <div className='badge badge-primary'>TailwindCSS</div>
+                <div className='badge badge-primary'>DaisyUI</div>
+                <div className='badge badge-primary'>NodeJS</div>
+                <div className='badge badge-primary'>Vercel</div>
+                <div className='badge badge-primary'>Lucide</div>
+                <div/>
+
+              </div>
+            </li>
+            <p className='text-xs'>Web Tools</p>
+            <li className='list-row'>
+              <div className='space-x-1 space-y-1'>
+                <div className='badge badge-accent'>HTML</div>
+                <div className='badge badge-primary'>CSS</div>
+                <div className='badge badge-primary'>React</div>
+                <div className='badge badge-primary'>NextJS</div>
+                <div className='badge badge-primary'>TailwindCSS</div>
+                <div className='badge badge-primary'>DaisyUI</div>
+                <div className='badge badge-primary'>NodeJS</div>
+                <div className='badge badge-primary'>Vercel</div>
+                <div className='badge badge-primary'>Lucide</div>
+                <div/>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+      
       
     </section>
   )

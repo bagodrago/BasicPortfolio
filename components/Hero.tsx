@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const Hero = () => {
-  // TODO: Adjust alignment for lg+
   return (
     <section id="/" className="hero">
       {/*Background Layer*/}
