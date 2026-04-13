@@ -10,7 +10,7 @@ const Hero = () => {
       />
 
       {/*Hero Content*/}
-      <div className="hero-content flex-row m-10 space-x-10 2xl:max-w-390">
+      <div className="hero-content flex-row m-10 space-x-25 2xl:max-w-390">
 
         {/*Photo*/}
         {/* TODO: Put photo image in a mask */}
@@ -21,7 +21,7 @@ const Hero = () => {
         />
 
         {/*Text*/}
-        <div className="text-white text-right space-y-10">
+        <div className="text-white text-left space-y-10 w-230">
           <h1 className="font-bold text-5xl 2xl:text-6xl">
             Let's make your <span className="text-accent italic">dream</span> projects a <span className="text-accent underline">reality</span>!
           </h1>
@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           {/*Explore Button*/}
-          <button className="btn hero__btn">
+          <button className="btn btn-xl rounded-xl hero__btn">
             <Link href="#about" replace>
               See what I have to offer!
             </Link>

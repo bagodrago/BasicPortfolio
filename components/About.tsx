@@ -67,9 +67,10 @@ const About = () => {
           </div>
         </div>
 
+        {/* TODO: Make Tech Stack a Section rather than a card */}
         {/*Tech Stack Card*/}
-        <div className='card card-lg about__tech_card'>
-          <h2 className='card-title mb-3'>
+        <div className='about__tech_card'>
+          <h2 className='mb-3'>
             My Skills
           </h2>
 
