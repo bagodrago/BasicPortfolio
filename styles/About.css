@@ -12,7 +12,6 @@
   flex 
   flex-col
   xl:flex-row 
-  gap-15 
   items-center
 }
 
@@ -23,7 +22,6 @@
   overflow-hidden 
   relative 
   shadow-lg 
-  max-w-250
 }
 
 .about__bg_wrapper {
