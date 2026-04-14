@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section[id] {
   @apply scroll-mt-170
 }
 

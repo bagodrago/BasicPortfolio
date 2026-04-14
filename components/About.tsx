@@ -4,22 +4,12 @@ const About = () => {
   
   return (
     <section id="about" className="about">
-
-      {/*Title*/}
-      <div className='my-10 mx-10 lg:mx-50'>
-        <h2 className='text-4xl italic font-semibold'>
-          Who am I?
-        </h2>
-        <p className='mt-3'>
-          Here's a bit about me...
-        </p>
-      </div>
       
       <div className='about__layout_wrapper'>
 
         {/*Card*/}
-        <div className="card card-xl about__card">
-          
+        <div className="about__card">
+
           {/*Background Layer*/}
           <div className='about__bg_wrapper'>
             <div className='about__bg'/>
@@ -28,15 +18,23 @@ const About = () => {
           {/*Gradient Layer*/}
           <div className='about__gradient'/>
 
+          {/*Title*/}
+          <div className='my-10 mx-10 lg:mx-50 relative z-20'>
+            <h2 className='text-4xl italic font-semibold'>
+              Who am I?
+            </h2>
+            <p className='mt-3'>
+              Here's a bit about me...
+            </p>
+          </div>
+
           {/*Card Body*/}
-          <div className="card-body about__card_body">
+          <div className="about__card_body">
 
             {/*Avatar*/}
-            <div className='flex items-center'>
-              <div className='avatar h-40 w-40'>
-                <div className="rounded-full ring-5 ring-primary">
-                  <img src="/pete.jpg" />
-                </div>
+            <div className='avatar h-40 w-40'>
+              <div className="rounded-full ring-5 ring-primary">
+                <img src="/pete.jpg" />
               </div>
             </div>
 

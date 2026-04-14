@@ -42,7 +42,7 @@ const ContactForm = () => {
           <input type="text" onChange={handleChange} className='input w-full mb-2' placeholder='example@email.com'/>
 
           <label className='label'>Message</label>
-          <textarea onChange={handleChange} className='textarea w-full h-60' placeholder=''/>
+          <textarea onChange={handleChange} className='textarea w-full h-60 resize-none' placeholder=''/>
           
           <button type="submit" className="btn">
             Send Message
