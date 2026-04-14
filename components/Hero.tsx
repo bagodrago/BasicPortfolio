@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollLink from "./ScrollLink";
 
 const Hero = () => {
   return (
@@ -32,9 +33,9 @@ const Hero = () => {
 
           {/*Explore Button*/}
           <button className="btn btn-xl rounded-xl hero__btn">
-            <Link href="#about" replace>
+            <ScrollLink href="about">
               See what I have to offer!
-            </Link>
+            </ScrollLink>
           </button>
         </div>
       </div>

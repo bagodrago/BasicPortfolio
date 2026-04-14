@@ -1,6 +1,6 @@
 .projects {
   @apply py-10 
-  min-h-screen 
+  h-[calc(100vh-64px)]
   bg-primary 
   text-primary-content 
   text-right

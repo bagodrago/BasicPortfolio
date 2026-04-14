@@ -8,7 +8,7 @@ html {
 }
 
 section[id] {
-  @apply scroll-mt-170
+  scroll-margin-top: 64px;
 }
 
 button {

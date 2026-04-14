@@ -3,6 +3,7 @@ import { Menu, Info } from 'lucide-react'
 
 import ModeToggle from './ModeToggle';
 import Logo from './Logo';
+import ScrollLink from './ScrollLink';
 
 const Navbar = () => {
   return (
@@ -27,9 +28,9 @@ const Navbar = () => {
         
         {/*Links*/}
         <ul className='menu menu-horizontal px-1 hidden lg:flex'>
-          <li><Link href="#about"    replace>About</Link></li>
-          <li><Link href="#projects" replace>Projects</Link></li>
-          <li><Link href="#contact"  replace>Contact</Link></li>
+          <li><ScrollLink href='about'    >About</ScrollLink></li>
+          <li><ScrollLink href='projects' >Projects</ScrollLink></li>
+          <li><ScrollLink href='contact'  >Contact</ScrollLink></li>
         </ul>
 
         {/*Dropdown Menu*/}

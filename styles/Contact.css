@@ -9,5 +9,5 @@
   py-20
   px-10
   md:px-20
-  min-h-screen
+  min-h-[calc(100vh-64px)]
 }
