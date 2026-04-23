@@ -11,7 +11,7 @@ const Contact = () => {
       />
       
       {/*Text*/}
-      <div className='mx-20 my-10 z-10 text-white relative'>
+      <div className='max-w-xl mb-10 z-10 text-white relative'>
         <h2 className='text-4xl font-semibold'>
           Let's get in touch!
         </h2>
