@@ -4,7 +4,8 @@
   flex-1 
   relative 
   overflow-hidden 
-  h-[calc(100vh-64px)]
+  xl:h-[calc(100vh-64px)]
+  shadow-lg
 }
 
 .about__layout_wrapper {
@@ -16,13 +17,11 @@
 }
 
 .about__card {
-  @apply bg-primary 
-  text-primary-content 
-  flex
+  @apply flex
   flex-col
+  text-primary-content 
   overflow-hidden 
   relative 
-  shadow-lg
   h-full
 }
 
@@ -38,8 +37,10 @@
   @apply h-full 
   w-full 
   bg-[url(/marble-bg.jpg)]
-  bg-cover
-  bg-center
+  bg-size-[max(200%,600px)_auto]
+  md:bg-size-[max(150%,600px)_auto]
+  xl:bg-size-[max(110%,600px)_auto]
+  bg-top-left
   grayscale
   mix-blend-hard-light
   opacity-70
@@ -49,7 +50,7 @@
   @apply absolute 
   pointer-events-none
   inset-0 
-  z-10 
+  z-5 
   
   md:bg-linear-to-l 
   bg-linear-to-t 
@@ -74,12 +75,12 @@
 
 .about__tech_card {
   @apply p-5 
-  bg-base-content 
   text-base-300 
-  shadow-lg
   w-full
   h-full
   flex
   flex-col
   justify-end
+  relative
+  z-20
 }
