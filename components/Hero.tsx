@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ScrollLink from "./ScrollLink";
 
 const Hero = () => {
