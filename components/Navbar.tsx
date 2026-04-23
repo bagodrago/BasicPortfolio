@@ -42,9 +42,9 @@ const Navbar = () => {
             tabIndex={-1}
             className='menu menu-md dropdown-content navbar__dropdown_list'
           >
-            <li><Link href="#about"    replace>About</Link></li>
-            <li><Link href="#projects" replace>Projects</Link></li>
-            <li><Link href="#contact"  replace>Contact</Link></li>
+            <li><ScrollLink href='about'    >About</ScrollLink></li>
+            <li><ScrollLink href='projects' >Projects</ScrollLink></li>
+            <li><ScrollLink href='contact'  >Contact</ScrollLink></li>
           </ul>
         </div>
       </div>
