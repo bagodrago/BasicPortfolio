@@ -8,15 +8,15 @@ const About = () => {
       
       <div className='about__layout_wrapper'>
         {/*Background Layer*/}
-          <div className='about__bg_wrapper'>
-            <div className='about__bg'/>
-          </div>
+        <div className='about__bg_wrapper'>
+          <div className='about__bg'/>
+        </div>
 
-          {/*Gradient Layer*/}
-          <div className='about__gradient'/>
+        {/*Gradient Layer*/}
+        <div className='about__gradient'/>
 
-          {/*Divider Layer*/}
-          <AboutDivider/>
+        {/*Divider Layer*/}
+        <AboutDivider/>
 
         {/*Card*/}
         <div className="about__card">
