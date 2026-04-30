@@ -7,7 +7,6 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
 // TODO: Implement transitions for all components
-// TODO: Fix scroll height for links
 export default function Home() {
 
   return (

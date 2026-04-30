@@ -6,8 +6,31 @@
   items-center
   relative 
   overflow-hidden
-  py-15
+  pt-15
   px-10
   md:px-20
   min-h-[calc(100vh-64px)]
+}
+
+.contact__gradient {
+  @apply absolute 
+  pointer-events-none
+  inset-0 
+  z-0
+  
+  bg-linear-to-b
+  
+  from-black/60
+  to-transparent 
+  from-0% 
+  to-40%
+}
+
+.contact__footer {
+  @apply p-4 
+  bg-base-100/40 
+  backdrop-blur-lg 
+  text-base-content 
+  absolute 
+  bottom-0
 }

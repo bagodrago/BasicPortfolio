@@ -58,7 +58,6 @@ const About = () => {
                 Recently, I’ve focused on developing React-based applications and applying AGILE methodologies to deliver clean, maintainable code. 
                 I’m particularly interested in creating user-focused software while ensuring reliability through thoughtful testing practices.
               </p>
-              {/* TODO: Rewrite about */}
 
               {/*LinkedIn Button*/}
               <button className="btn">
