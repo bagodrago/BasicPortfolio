@@ -13,12 +13,12 @@ const Navbar = () => {
         <Logo />
 
         {/*Looking for Work badge*/}
-        <Link href="#contact" replace>
-          <div className='badge badge-soft badge-accent outline-1 outline-accent/50 min-w-40'>
+        <ScrollLink href="contact">
+          <div className='badge badge-soft badge-accent outline-1 outline-accent/50 min-w-40 select-none cursor-pointer'>
             <Info size={14}/>
             Looking for Work
           </div>
-        </Link>
+        </ScrollLink>
 
       </div>
 
