@@ -3,6 +3,7 @@ import ScrollLink from "./ScrollLink";
 const Hero = () => {
   return (
     <section id="/" className="hero">
+      {/* TODO: Scale correctly with screen */}
       {/*Background Layer*/}
       <div
         className="my-bg"
