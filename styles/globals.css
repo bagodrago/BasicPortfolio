@@ -13,6 +13,8 @@ section[id] {
 
 button {
   @apply bg-orange-400 
+  disabled:bg-gray-400
+  disabled:text-gray-200
   text-white 
   hover:bg-accent 
   hover:text-accent-content 
