@@ -1,10 +1,14 @@
 "use client";
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { CircleCheck, CircleX } from 'lucide-react';
+
 import { formSchema, ContactFormData } from '@/lib/formSchema';
 
 const ContactForm = () => {
 
+  // * React Hook Form
   const {
     register,
     handleSubmit,
@@ -16,30 +20,44 @@ const ContactForm = () => {
     mode: 'onTouched',
   });
 
+  // * States for Submission Alert
+  const [toast, setToast] = useState<{type: 'Success'|'Failure'; message: string} | null>(null);
+  const [toastVis, setToastVis] = useState(false);
+
+  const showToast = (type: 'Success'|'Failure', message: string) => {
+    setToast({type, message});
+    setToastVis(true);
+
+    setTimeout(() => setToastVis(false), 3500);
+    setTimeout(() => setToast(null), 4000);
+  }
+
+  // * Submit Handler
   const onSubmit = async (data: ContactFormData) => {
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
-      })
-      reset();
-      // TODO: Make toast with submission confirmed
+      });
 
-      const resData = await res.json;
-      console.log(resData);
+      if (!res.ok) throw new Error();
+
+      reset();
+      showToast("Success", "Sent successfully!");
     } catch (e) {
-      console.log(e);
+      showToast("Failure", `Something went wrong. Please try again.`)
     }
   }
 
-  const MAX = 750;
+  // * Variables
+  const MAX = 750; // Maximum message length
   const messageLength = watch('message')?.length ?? 0;
 
   const counterColor =
   messageLength > MAX * 0.9 ? 'text-error' :
   messageLength > MAX * 0.75 ? 'text-warning' :
-  'text-base-content/40';
+  'text-base-content/40'; // Adjust character counter color by messageLength
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='card contact_form' noValidate>
@@ -48,28 +66,24 @@ const ContactForm = () => {
 
           {/*Name*/}
           <label className='label'>Name</label>
-          <div>
-            <input 
-              id="name" 
-              type="text" 
-              className={`input w-full ${!errors.name ? '' : 'textarea-error'}`} 
-              placeholder='John Doe' 
-              {...register('name')}
-            />
-          </div>
+          <input 
+            id="name" 
+            type="text" 
+            className={`input w-full ${!errors.name ? '' : 'textarea-error'}`} 
+            placeholder='John Doe' 
+            {...register('name')}
+          />
           {errors.name && <label role="alert" className='label floating-label text-error text-xs'>{errors.name.message}</label>}
 
           {/*Email*/}
           <label className='label mt-2'>Email</label>
-          <div>
-            <input 
-              id="email" 
-              type="email" 
-              className={`input w-full ${!errors.email ? '' : 'textarea-error'}`} 
-              placeholder='example@email.com' 
-              {...register('email')}
-            />
-          </div>
+          <input 
+            id="email" 
+            type="email" 
+            className={`input w-full ${!errors.email ? '' : 'textarea-error'}`} 
+            placeholder='example@email.com' 
+            {...register('email')}
+          />
           {errors.email && <label role="alert" className='label floating-label text-error text-xs'>{errors.email.message}</label>}  
 
           {/*Message*/}
@@ -98,6 +112,20 @@ const ContactForm = () => {
 
         </fieldset>
       </div>
+
+      {/*Submission Alert Toast*/}
+      {toast && 
+        <div className='toast toast-center toast-bottom z-50 text-lg'>
+          <div className={`
+            alert transition-opacity duration-300
+            ${toast.type === "Success" ? 'alert-success' : 'alert-error'} 
+            ${toastVis ? 'opacity-100' : 'opacity-0'}
+          `}>
+            {toast.type === "Success" ? <CircleCheck/> : <CircleX/>}
+            {toast.message}
+          </div>
+        </div>
+      }
     </form>
   )
 }

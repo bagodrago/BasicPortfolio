@@ -70,7 +70,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* TODO: Make Tech Stack a Section rather than a card */}
         {/*Tech Stack Card*/}
         <div className='about__tech_card'>
           <h2 className='mb-3'>
