@@ -9,6 +9,10 @@ const AboutTechStack = () => {
 
       {/* TODO: Populate Tech Stack with real skills (possibly with a factory) */}
       <ul className='list overflow-scroll'>
+        
+      </ul>
+
+      <ul className='list overflow-scroll'>
         <p className='text-xs'>Web Tools</p>
         <li className='list-row'>
           <div className='space-x-1 space-y-1'>

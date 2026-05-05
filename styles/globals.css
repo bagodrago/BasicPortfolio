@@ -3,12 +3,23 @@
   themes: light, dark;
 };
 
+@theme inline {
+  --spacing-nav: 64px;
+}
+
+@utility h-frame {
+  height: calc(100vh - var(--spacing-nav));
+}
+@utility min-h-frame {
+  min-height: calc(100vh - var(--spacing-nav));
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 section[id] {
-  scroll-margin-top: 64px;
+  scroll-margin-top: var(--spacing-nav);
 }
 
 button {

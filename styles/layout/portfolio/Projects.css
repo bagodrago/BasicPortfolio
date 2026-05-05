@@ -1,6 +1,6 @@
 .projects {
   @apply py-10 
-  h-[calc(100vh-64px)]
+  h-frame
   bg-primary 
   text-primary-content 
   text-right

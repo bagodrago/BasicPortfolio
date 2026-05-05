@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-import { formSchema } from '@/lib/formSchema';
+import { formSchema } from '@/src/types/formSchema';
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
