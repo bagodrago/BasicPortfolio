@@ -72,15 +72,3 @@
   relative
   m-10
 }
-
-.about__tech_card {
-  @apply p-5 
-  text-base-300 
-  w-full
-  h-full
-  flex
-  flex-col
-  justify-end
-  relative
-  z-20
-}

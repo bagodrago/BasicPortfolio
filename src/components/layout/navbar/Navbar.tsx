@@ -2,7 +2,7 @@ import { Menu, Info } from 'lucide-react'
 
 import ModeToggle from './ModeToggle';
 import Logo from './Logo';
-import ScrollLink from '../../util/ScrollLink';
+import ScrollLink from '@/src/components/util/ScrollLink';
 
 const Navbar = () => {
   return (

@@ -1,0 +1,11 @@
+.about_tech_stack {
+  @apply p-5 
+  text-white
+  w-full
+  h-full
+  flex
+  flex-col
+  justify-end
+  relative
+  z-20
+}
