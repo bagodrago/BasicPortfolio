@@ -1,0 +1,30 @@
+[
+  {
+    "tool-type": "Web Tools",
+    "tools": [
+      {"name": "HTML"},
+      {"name": "CSS"},
+      {"name": "React"},
+      {"name": "NextJS"},
+      {"name": "TailwindCSS"},
+      {"name": "DaisyUI"},
+      {"name": "NodeJS"},
+      {"name": "Vercel"},
+      {"name": "Lucide"}
+    ]
+  },
+  {
+    "tool-type": "Web Tools",
+    "tools": [
+      {"name": "HTML"},
+      {"name": "CSS"},
+      {"name": "React"},
+      {"name": "NextJS"},
+      {"name": "TailwindCSS"},
+      {"name": "DaisyUI"},
+      {"name": "NodeJS"},
+      {"name": "Vercel"},
+      {"name": "Lucide"}
+    ]
+  }
+]
