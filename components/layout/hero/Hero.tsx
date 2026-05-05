@@ -1,4 +1,4 @@
-import ScrollLink from "./ScrollLink";
+import ScrollLink from "../../util/ScrollLink";
 
 const Hero = () => {
   return (

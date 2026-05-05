@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CircleCheck, CircleX } from 'lucide-react';
 
-import { formSchema, ContactFormData } from '@/lib/formSchema';
+import { formSchema, ContactFormData } from '@/types/formSchema';
 
 const ContactForm = () => {
 

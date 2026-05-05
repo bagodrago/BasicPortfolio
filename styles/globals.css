@@ -33,9 +33,9 @@ button {
   brightness-80 
 }
 
-@import "./Navbar.css";
-@import "./Hero.css";
-@import "./About.css";
-@import "./Projects.css";
-@import "./Contact.css";
-@import "./ContactForm.css";
+@import "./layout/navbar/Navbar.css";
+@import "./layout/hero/Hero.css";
+@import "./layout/about/About.css";
+@import "./layout/portfolio/Projects.css";
+@import "./layout/contact/Contact.css";
+@import "./layout/contact/ContactForm.css";

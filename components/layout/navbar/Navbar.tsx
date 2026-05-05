@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import { Menu, Info } from 'lucide-react'
 
 import ModeToggle from './ModeToggle';
 import Logo from './Logo';
-import ScrollLink from './ScrollLink';
+import ScrollLink from '../../util/ScrollLink';
 
 const Navbar = () => {
   return (

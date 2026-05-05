@@ -1,5 +1,5 @@
 'use client';
-import useTheme from '@/contexts/useTheme';
+import useTheme from '@/contexts/theme_context/useTheme';
 import { Sun, Moon } from 'lucide-react';
 
 const ModeToggle = () => {

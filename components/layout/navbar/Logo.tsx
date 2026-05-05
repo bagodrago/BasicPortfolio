@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import useTheme from '@/contexts/useTheme';
-import ScrollLink from './ScrollLink';
+import useTheme from '@/contexts/theme_context/useTheme';
+import ScrollLink from '../../util/ScrollLink';
 
 const Logo = () => {
   const { isDark } = useTheme();
