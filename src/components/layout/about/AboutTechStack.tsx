@@ -1,5 +1,5 @@
 import getWebToolData from "@/src/lib/getWebToolData";
-import { Tool, ToolData } from "@/src/types/ToolData";
+import { ToolData } from "@/src/types/ToolData";
 
 const AboutTechStack = () => {
   const tech_stack = getWebToolData();
@@ -12,15 +12,15 @@ const AboutTechStack = () => {
 
       {/*Dynamically populate tech stack with data from json file*/}
       <ul className='list overflow-scroll'>
-        {tech_stack.map((tool_data: ToolData) => { return (
-          <div>
+        {tech_stack.map((tool_data: ToolData, index: number) => { return (
+          <div key={index}>
             <p className="text-xs">{tool_data.tool_type}</p>
             <li className="list-row">
-              <div className="space-x-1 space-y-1">
-                {tool_data.tools.map((tool: Tool) => { return (
-                    <div className="badge badge-primary">{tool.name}</div>
+              <div className="space-x-1 space-y-1 select-none">
+                {tool_data.tools.map((tool: string) => { return (
+                    <div className={`badge ${tool_data.badge_color} hover:brightness-110`}>{tool}</div>
                 );})}
-                <div/> {/* ! Load bearing div, do not remove*/}
+              <div/>
               </div>
             </li>
           </div>

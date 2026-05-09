@@ -1,32 +1,34 @@
 [
   {
     "tool_type": "Web Tools",
+    "badge_color": "badge-warning",
     "tools": [
-      {"name": "HTML"},
-      {"name": "CSS"},
-      {"name": "React"},
-      {"name": "NextJS"},
-      {"name": "TailwindCSS"},
-      {"name": "DaisyUI"},
-      {"name": "NodeJS"},
-      {"name": "Vercel"},
-      {"name": "Lucide"},
-      {"name": "Swiper"}
+      "HTML",
+      "CSS",
+      "React",
+      "NextJS",
+      "TailwindCSS",
+      "DaisyUI",
+      "NodeJS",
+      "Vercel",
+      "Lucide",
+      "Swiper"
     ]
   },
   {
     "tool_type": "Web Tools",
+    "badge_color": "badge-info",
     "tools": [
-      {"name": "HTML"},
-      {"name": "CSS"},
-      {"name": "React"},
-      {"name": "NextJS"},
-      {"name": "TailwindCSS"},
-      {"name": "DaisyUI"},
-      {"name": "NodeJS"},
-      {"name": "Vercel"},
-      {"name": "Lucide"},
-      {"name": "Swiper"}
+      "HTML",
+      "CSS",
+      "React",
+      "NextJS",
+      "TailwindCSS",
+      "DaisyUI",
+      "NodeJS",
+      "Vercel",
+      "Lucide",
+      "Swiper"
     ]
   }
 ]
