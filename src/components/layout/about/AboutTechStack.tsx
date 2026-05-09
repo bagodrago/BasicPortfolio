@@ -1,51 +1,31 @@
-import React from 'react'
+import getWebToolData from "@/src/lib/getWebToolData";
+import { Tool, ToolData } from "@/src/types/ToolData";
 
 const AboutTechStack = () => {
+  const tech_stack = getWebToolData();
+
   return (
     <div className='about_tech_stack'>
       <h2 className='mb-3'>
         My Skills
       </h2>
 
-      {/* TODO: Populate Tech Stack with real skills (possibly with a factory) */}
+      {/*Dynamically populate tech stack with data from json file*/}
       <ul className='list overflow-scroll'>
-        
-      </ul>
-
-      <ul className='list overflow-scroll'>
-        <p className='text-xs'>Web Tools</p>
-        <li className='list-row'>
-          <div className='space-x-1 space-y-1'>
-            <div className='badge badge-primary'>HTML</div>
-            <div className='badge badge-primary'>CSS</div>
-            <div className='badge badge-primary'>React</div>
-            <div className='badge badge-primary'>NextJS</div>
-            <div className='badge badge-primary'>TailwindCSS</div>
-            <div className='badge badge-primary'>DaisyUI</div>
-            <div className='badge badge-primary'>NodeJS</div>
-            <div className='badge badge-primary'>Vercel</div>
-            <div className='badge badge-primary'>Lucide</div>
-            <div/>
-
+        {tech_stack.map((tool_data: ToolData) => { return (
+          <div>
+            <p className="text-xs">{tool_data.tool_type}</p>
+            <li className="list-row">
+              <div className="space-x-1 space-y-1">
+                {tool_data.tools.map((tool: Tool) => { return (
+                    <div className="badge badge-primary">{tool.name}</div>
+                );})}
+                <div/> {/* ! Load bearing div, do not remove*/}
+              </div>
+            </li>
           </div>
-        </li>
-        <p className='text-xs'>Web Tools</p>
-        <li className='list-row'>
-          <div className='space-x-1 space-y-1'>
-            <div className='badge badge-accent'>HTML</div>
-            <div className='badge badge-primary'>CSS</div>
-            <div className='badge badge-primary'>React</div>
-            <div className='badge badge-primary'>NextJS</div>
-            <div className='badge badge-primary'>TailwindCSS</div>
-            <div className='badge badge-primary'>DaisyUI</div>
-            <div className='badge badge-primary'>NodeJS</div>
-            <div className='badge badge-primary'>Vercel</div>
-            <div className='badge badge-primary'>Lucide</div>
-            <div/>
-          </div>
-        </li>
+        ); })}
       </ul>
-
     </div>
   )
 }

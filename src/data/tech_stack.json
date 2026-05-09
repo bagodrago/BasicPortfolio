@@ -1,6 +1,6 @@
 [
   {
-    "tool-type": "Web Tools",
+    "tool_type": "Web Tools",
     "tools": [
       {"name": "HTML"},
       {"name": "CSS"},
@@ -15,7 +15,7 @@
     ]
   },
   {
-    "tool-type": "Web Tools",
+    "tool_type": "Web Tools",
     "tools": [
       {"name": "HTML"},
       {"name": "CSS"},
