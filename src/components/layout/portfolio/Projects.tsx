@@ -1,4 +1,4 @@
-import React from 'react'
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
     // TODO: Choose better background
@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects" className="projects">
       
       {/*Text*/}
-      <div className='my-10 mx-10 lg:mx-50'>
+      <div className='my-10 mx-10 lg:mx-50 relative'>
         <h2 className='text-4xl italic font-semibold'>
           My Projects
         </h2>
@@ -15,9 +15,22 @@ const Projects = () => {
         </p>
       </div>
 
-      {/* TODO: Implement project cards */}
-      <div>
-        
+      {/*Project Cards*/}
+      <div className='project__deck'>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
+      </div>
+
+      {/*Gradient Layer*/}
+      <div className='project__gradient'/>
+
+      {/* TODO: Include button functionality with state to toggle height and gradient */}
+      {/*Divider*/}
+      <div className='divider absolute bottom-5 left-10 right-10 z-10 h-12 items-center'>
+        <button className='btn mb-5'>
+          Show all projects
+        </button>
       </div>
 
     </section>

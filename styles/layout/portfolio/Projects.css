@@ -4,4 +4,32 @@
   bg-primary 
   text-primary-content 
   text-right
+  z-0
+  relative
 }
+
+.project__deck {
+  @apply px-20 
+  gap-4 
+  justify-items-center 
+  relative
+
+  grid grid-flow-row 
+  lg:grid-cols-2 
+  grid-cols-1
+}
+
+.project__gradient {
+  @apply absolute 
+  pointer-events-none
+  inset-0 
+  z-5 
+  
+  bg-linear-to-t 
+  
+  from-primary 
+  to-transparent 
+  from-15% 
+  to-30%
+}
+

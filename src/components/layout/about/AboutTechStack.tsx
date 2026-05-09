@@ -17,8 +17,8 @@ const AboutTechStack = () => {
             <p className="text-xs">{tool_data.tool_type}</p>
             <li className="list-row">
               <div className="space-x-1 space-y-1 select-none">
-                {tool_data.tools.map((tool: string) => { return (
-                    <div className={`badge ${tool_data.badge_color} hover:brightness-110`}>{tool}</div>
+                {tool_data.tools.map((tool: string, index: number) => { return (
+                    <div key={index} className={`badge ${tool_data.badge_color} hover:brightness-110`}>{tool}</div>
                 );})}
               <div/>
               </div>
