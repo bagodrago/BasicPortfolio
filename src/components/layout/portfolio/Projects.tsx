@@ -7,7 +7,7 @@ const Projects = () => {
       
       {/*Text*/}
       <div className='my-10 mx-10 lg:mx-50 relative'>
-        <h2 className='text-4xl italic font-semibold'>
+        <h2 className='text-5xl font-semibold'>
           My Projects
         </h2>
         <p  className='mt-3'>

@@ -3,6 +3,8 @@
   themes: light, dark;
 };
 
+@import "./fonts.css";
+
 @theme inline {
   --spacing-nav: 64px;
 }
@@ -16,6 +18,11 @@
 
 html {
   scroll-behavior: smooth;
+  /* font-family: 'Saeada', sans-serif; */
+}
+
+h2 {
+  font-family: 'Batolah', sans-serif;
 }
 
 section[id] {

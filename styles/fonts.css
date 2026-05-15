@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Batolah';
+  src: url('@/public/fonts/Batolah.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Dimbo';
+  src: url('@/public/fonts/Dimbo Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dimbo';
+  src: url('@/public/fonts/Dimbo Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Grow Year';
+  src: url('@/public/fonts/Grow Year.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* @font-face {
+  font-family: 'Saeada';
+  src: url('@/public/fonts/LTSaeada-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'Saeada';
+  src: url('@/public/fonts/LTSaeada-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saeada';
+  src: url('@/public/fonts/LTSaeada-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saeada';
+  src: url('@/public/fonts/LTSaeada-SemiBold.otf');
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saeada';
+  src: url('@/public/fonts/LTSaeada-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}

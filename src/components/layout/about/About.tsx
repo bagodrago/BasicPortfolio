@@ -24,7 +24,7 @@ const About = () => {
 
           {/*Title*/}
           <div className='my-10 mx-10 lg:mx-50 relative z-20'>
-            <h2 className='text-6xl italic font-semibold'>
+            <h2 className='text-7xl font-semibold'>
               Who am I?
             </h2>
             <p className='mt-3'>
